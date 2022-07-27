@@ -8,7 +8,7 @@ import Axios from 'axios';
 export const Products = () => {
   const [data, setData] = useState([]);
   useEffect(() =>{
-    Axios.get(' https://server2001.herokuapp.com/products').then((response)=>{
+    Axios.get(' https://server2001.herokuapp.com/Products').then((response)=>{
       setData(response.data)
     })
   },[])
